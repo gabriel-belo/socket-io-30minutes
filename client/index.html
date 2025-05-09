@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="script.js"></script>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 90%;
+            max-width: 1200px;
+        }
+        #message-container{
+            border: 1px solid black;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        #message-container div{
+            background-color: #ccc;
+            padding: 5px;
+        }
+        /* #message-container div:nth-child(2n){
+            
+        } */
+        
+        #message-container div {
+        background-color: #ccc;
+        padding: 8px 10px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        }
+
+        form {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 10px;
+        width: 250px;
+        height: 30px;
+        margin-top: 20px;
+        }
+
+        input, button {
+        padding: 8px;
+        font-size: 1rem;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        }
+
+        button {
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        width: 80px;
+        height: 30px;
+        }
+
+        button:hover {
+        background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="message-container"></div>
+    <form action="" id="form">
+        <label for="message-input">Message</label>
+        <input type="text" id="message-input">
+        <button type="submit" id="send-button">Send</button>
+        <label for="room-input">Room</label>
+        <input type="text" id="room-input">
+        <button type="button" id="room-button">Join</button>
+    </form>
+</body>
+</html>
